@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Creation.png" type="image/x-icon">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-size: 40px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            text-align: center;
+            color: rgb(255, 0, 0);
+        }
+
+        #signup {
+            background-color: rgb(38, 0, 90);
+            height: 906px;
+            justify-content: center;
+            position: relative;
+        }
+
+        .form-input {
+            width: 550px;
+            height: 35px;
+            display: flex;
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        p {
+            text-align: center;
+        }
+        h4{
+            font-family: sans-serif;
+        }
+        h5{
+            font-family: sans-serif;
+            font-size: 15px;
+        }
+        #heading{
+            background-color: chartreuse;
+            height: 63px;
+        }
+        .cancelbtn {
+            width: 100px;
+            height: 30px;
+            border: 2px solid rgb(255, 0, 0);
+            background-color: rgb(255, 0, 0);
+            color: rgb(0, 0, 0);
+            font-weight: 600;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .signupbtn {
+            width: 100px;
+            height: 30px;
+            border: 2px solid rgb(0, 255, 30);
+            background-color: rgb(0, 255, 30);
+            color: rgb(0, 0, 0);
+            font-weight: 600;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .gohome {
+            width: 120px;
+            height: 40px;
+            border: 2px solid rgb(255, 234, 0);
+            background-color: rgb(255, 234, 0);
+            color: rgb(0, 0, 0);
+            font-weight: 600;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        @media only screen and (max-width: 574px) {
+            .form-input {
+                width: 491px;
+            }
+        }
+
+        @media only screen and (max-width: 520px) {
+            .form-input {
+                width: 425px;
+            }
+        }
+
+        @media only screen and (max-width: 446px) {
+            .form-input {
+                width: 380px;
+            }
+        }
+
+        @media only screen and (max-width: 398px) {
+            .form-input {
+                width: 335px;
+            }
+        }
+
+        @media only screen and (max-width: 360px) {
+            .form-input {
+                width: 310px;
+            }
+        }
+
+        @media only screen and (max-width: 320px) {
+            .form-input {
+                width: 270px;
+            }
+        }
+
+        @media only screen and (max-width: 283px) {
+            .form-input {
+                width: 240px;
+            }
+        }
+        @media only screen and (max-width: 378px) {
+            #heading {
+                height: 113px;
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <section id="heading">
+    <h1>Join our community</h1><br><br><br>
+    </section>
+    <section id="signup"><br><br><br>
+        <center>
+            <form action="" data-netlify="true" name="Signup" method="post">
+                <label for="user name" style="color:#fff"><h4><b>User Name</b></h4></label>
+                <input class="form-input" type="text" placeholder="Enter User Name" name="User Name" required><br><br>
+
+                <label for="psw"  style="color:#fff"><h4><b>Mobile Number</b></h4></label>
+                <input class="form-input" type="text" placeholder="Enter Mobile Number" name="mobile" required><br><br>
+
+                <label for="email"  style="color:#fff"><h4><b>Email</b></h4></label>
+                <input class="form-input" type="text" placeholder="Enter Email Address" name="Email Address" required><br><br>
+
+                <label for="age" style="color:#fff"><h4><b>Age</b></h4></label>
+                <input class="form-input" type="number" placeholder="Enter Age" name="age" required><br><br>
+
+                <label for="gender"  style="color:#fff"><h4><b>Select Gender</b></h4></label><br>
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male"  style="color:#fff"><h5>Male</h5></label>
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female"  style="color:#fff"><h5>Female</h5></label><br><br>
+
+                <label for="psw" style="color:#fff"><h4><b>Password</b></h4></label>
+                <input class="form-input" type="password" placeholder="Enter Password" name="psw" required><br><br>
+
+                <label for="psw"  style="color:#fff"><h4><b>Re-Enter Password</b></h4></label>
+                <input class="form-input" type="password" placeholder="Re-Enter Password" name="psw" required><br><br>
+                <div class="submit"><a href="index.html">
+                        <button type="button" class="cancelbtn">Cancel</button></a>
+                    <button type="button" class="signupbtn" onclick="myFunction()">Sign Up</button></form><br><br>
+                </div>
+                </div>
+            </form>
+        </center>
+        <center>
+            <div class="goback"><a href="index.html">
+                <button type="button" class="gohome">Back to home</button>
+                </a>
+            </div>
+        </center>
+    </section>
+    <script>
+        function myFunction() {
+            alert(" 🎉🎉Congratulations! Now, you are a member of A.A.C 🦸‍♂️");
+        }
+    </script>
+
+</body>
+
+</html>
